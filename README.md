@@ -1,32 +1,6 @@
-# React Kanban Board
+## React Kanban Board
+### Where the real boss is guest
+### Live Demo : <a href="https://quicksellankit.vercel.app/">Click Me</a>
+<img align="left" alt="Coding" width="820px" src="https://github.com/codeBurner0/BlogFusion-Web-App/blob/main/ScreenShots/1.png">
 
-An interactive Kanban board application built with React that interacts with the [QuickSell API](https://api.quicksell.co/v1/internal/frontend-assignment).
-## Technologies
-- React
-- Redux
-- Axios
-- React-Icons
-- React-Router
-## Features
 
-- **Grouping Options**: Group tasks by Status, User, or Priority.
-- **Ordering Options**: Order tasks by Priority or Title.
-- **Interactive UI**: Manage tasks with an interactive interface.
-
-## Getting Started
-
-1. Clone the repository:
-   ```shell
-   git clone https://github.com/Amiyanshu-web/quicksell-KanbanBoard.git
- 
-2. Install dependencies:
-    ```shell
-    cd quicksell-KanbanBoard
-    npm install
-3. Starting the development server:
-    ```shell
-        npm start
-## Usage
-- Click the "Display" button to open the display options.
-- Select a grouping option (Status, User, Priority) and an ordering option (Priority, Title).
-- The Kanban board will dynamically adjust to display tasks based on your selections.
