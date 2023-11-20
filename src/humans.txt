@@ -1,0 +1,40 @@
+     /\  
+    /  \ 
+   / /\ \
+   \/  \/
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | デザイナー
+
+Ankit Anand
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+https://www.linkedin.com/in/ankit-anand-437187215
+https://github.com/codeBurner0
+
+_______________________________________________________________________________
+
+TECHNOLOGY | テクノロジー
+
+React
+Next.js
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS | フォント
+
+Caveat
+Young Serif
+Permanent Marker
+Courier Prime
