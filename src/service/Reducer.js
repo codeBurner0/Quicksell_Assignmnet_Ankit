@@ -9,7 +9,7 @@ const initialState = {
     message: null, // You can set the initial value to null or an appropriate default value
 };
 
-export const dataSlice = createReducer(initialState, {
+export const Reducer = createReducer(initialState, {
     dataRequest: (state) => {
         state.loading = true;
     },
@@ -26,21 +26,19 @@ export const dataSlice = createReducer(initialState, {
     dataSelectRequest: (state) => {
         state.loading = true;
         state.dataSelected = [];
-        state.user = null; // Reset user data
-        state.message = null; // Reset error message
+        state.user = null; 
+        state.message = null;
     },
     dataSelectSuccess: (state, action) => {
         state.loading = false;
         state.dataSelected = action.payload.dataSelected;
         state.user = action.payload.user;
-        state.message = null; // Reset error message
+        state.message = null;
     },
     dataSelectFailure: (state, action) => {
         state.loading = false;
         state.dataSelected = [];
-        state.user = null; // Reset user data
+        state.user = null;
         state.message = action.payload.message;
     },
 });
-
-// export default dataSlice;

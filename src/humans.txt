@@ -1,40 +1,33 @@
-     /\  
-    /  \ 
-   / /\ \
-   \/  \/
+     /\            ___                  
+    /  \ |\ | |/ |  |    
+   / /\ \| \| |\ |  |     
+   \/  \/                        
 
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+<|| Fullstack and Flutter Developern ||>
 
-Ankit Anand
-Hand crafted design & web development
+Ankit Anand | フルスタックおよびフラッター開発者
+undergarduate GLA University
 
-Design tools:
-Figma
-Photoshop
-Blender
-
-https://www.linkedin.com/in/ankit-anand-437187215
-https://github.com/codeBurner0
+Social Platforms:
+LinkedIn:- https://www.linkedin.com/in/ankit-anand-437187215
+Github:- https://github.com/codeBurner0
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+TECHNOLOGIES AND LIBRARIES USED | 使用されるテクノロジーとライブラリ
+
 
 React
-Next.js
-Three.js
-Framer Motion
+Redux
+React-Icons
 
 _______________________________________________________________________________
 
-FONTS | フォント
+FONT | フォント
 
-Caveat
-Young Serif
-Permanent Marker
-Courier Prime
+Exo 2

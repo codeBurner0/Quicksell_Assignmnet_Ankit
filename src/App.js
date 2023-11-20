@@ -10,7 +10,6 @@ function App() {
   const { tickets } = useSelector((state) => state.dataSlice);
   useEffect(() => {
     dispatch(fetchDataApi());
-    // console.log(tickets)
   }, [dispatch]);
 
   return (

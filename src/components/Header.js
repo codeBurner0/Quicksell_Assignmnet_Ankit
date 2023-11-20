@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectData } from '../service/action';
 import '../assets/styles/Header.css'
 import { BoardIcon } from '../utils/BIcons';
+import Human from '../humans.txt';
 
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +46,6 @@ const Header = () => {
     useEffect(() => {
         if (groupBy === "user") {
             dispatch(selectData(groupBy, { tickets, users }, orderBy));
-            // console.log("object", tickets)
         }
         else {
             dispatch(selectData(groupBy, tickets, orderBy));
@@ -53,7 +53,6 @@ const Header = () => {
     }, [dispatch, tickets, groupBy, users, orderBy]);
 
     useEffect(() => {
-        // Add event listener to detect clicks outside the form
         const handleClickOutside = (e) => {
             if (hideRef.current && !hideRef.current.contains(e.target)) {
                 setIsVisible(false);
@@ -75,28 +74,26 @@ const Header = () => {
                     onClick={() => setIsVisible(!isVisible)}
 
                 >
-                    <BoardIcon element={"HeaderDisplay"} styleClass={'header_dis_ic'}/>
-
-                    {/* className='header_dis_icon1'  */}
-
+                    <BoardIcon element={"HeaderDisplay"} styleClass={'header_dis_ic'} />
                     <span className='header_dis'>Display</span>
                     <div className='header_dis_icon2' >
-                        <BoardIcon element={"HeaderArraowDown"} styleClass={'header_dis_ic'}/>
+                        <BoardIcon element={"HeaderArraowDown"} styleClass={'header_dis_ic'} />
                     </div>
 
                     {/* <MdKeyboardArrowDown className='header_dis_icon2' /> */}
                 </div>
                 <div className='header_icons_container'>
 
-                    <BoardIcon element={"github"}  title='Github' styleClass={'header_icons'}/>
-                    <BoardIcon element={"linkedin"} styleClass={'header_icons'} title='LinkedIn' />
-                    <BoardIcon element={"Human"} styleClass={'header_icons'} title='human.txt' />
+                    <a href="https://github.com/codeBurner0" target='_blank' className='header_anchor'> <BoardIcon element={"github"} title='Github' styleClass={'header_icons'} /></a>
+                    <a href="https://www.linkedin.com/in/ankit-anand-437187215/" target='_blank' className='header_anchor'> <BoardIcon element={"linkedin"} styleClass={'header_icons'} title='LinkedIn' /></a>
+                    <a href={Human} target='_blank' className='header_anchor'> <BoardIcon element={"Human"} styleClass={'header_icons'} title='human.txt' /></a>
+                   
                 </div>
                 {isVisible && (
                     <>
                         <div className="header_popup" >
                             <div className="group-select">
-                                <span className='header_grp'><BoardIcon element={"groupBy"} styleClass={'order'}/> Grouping</span>
+                                <span className='header_grp'><BoardIcon element={"groupBy"} styleClass={'order'} /> Grouping</span>
                                 <select
                                     value={groupBy}
                                     onChange={(e) => handleGroups(e, true)}
@@ -110,7 +107,7 @@ const Header = () => {
                                 </select>
                             </div>
                             <div>
-                                <span className='header_grp'><BoardIcon element={"orderBy"} styleClass={'order'}/> Ordering</span>
+                                <span className='header_grp'><BoardIcon element={"orderBy"} styleClass={'order'} /> Ordering</span>
                                 <select
                                     value={orderBy}
                                     onChange={(e) => handleGroups(e, false)}

@@ -6,7 +6,6 @@ import '../assets/styles/KanbanBoard.css'
 
 
 const KanbanBoard = () => {
-    // Select data from the Redux store
     const { dataSelected, user, users } = useSelector((state) => state.dataSlice);
     return (
         <div className="container">
@@ -38,7 +37,6 @@ const KanbanBoard = () => {
                             <BoardIcon element={"threeDots"}  title='explore' styleClass={' board_navigations'}/>
                             </div>
                         </div>
-                        {/* Render Card component */}
                         <div className="">
                             {element?.value?.map((item, ind) => {
                                 return (

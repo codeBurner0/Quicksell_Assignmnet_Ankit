@@ -103,6 +103,10 @@ option:hover{
     background-color: pink;
 }
 
+.header_anchor{
+    text-decoration: none;
+}
+
 @media screen and (max-width: 650px) {
     .header_container {
         margin-bottom: 10px;
